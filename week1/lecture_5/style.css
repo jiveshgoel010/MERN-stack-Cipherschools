@@ -8,30 +8,31 @@
 
 
 /* Universal Selector */
-*{
+* {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0%;
 }
 
 /* Element Selector */
-p{
+p {
     text-align: center;
 }
 
 
 /* Id Selector */
-#myId{
+#myId {
     color: red;
 }
 
 /* Class Selector */
-.myClass{
+.myClass {
     font-size: 3cap;
 }
 
 
 /* Group Selector */
-#myId, #myId1{
+#myId,
+#myId1 {
     background-color: antiquewhite;
 }
 
@@ -44,40 +45,44 @@ p{
 4. general sibling selector (~)
  */
 
- div p{  /*descendant selector*/
+div p {
+    /*descendant selector*/
     color: yellow;
- }
+}
 
- div>p{  /* child selector */
-    background-color: rgb(1, 24, 24);
- }
+div>p {
+    /* child selector */
+    background-color: cyan;
+}
 
- div + p{   /* adjacent sibling selector */
+div+p {
+    /* adjacent sibling selector */
     background-color: red;
- }
+}
 
 
- p ~ div{
-    background-color: aqua;
- }
+p~div {
+    background-color: blueviolet;
+}
 
 
- /* Pseduo selector  */
+/* Pseduo selector  */
 
- p ~ div:hover{
+p~div:hover {
     font-size: larger;
- }
+}
 
-div p::first-line{
+div p::first-line {
     color: red;
 }
-div p::first-letter{
+
+div p::first-letter {
     color: yellow;
 }
 
 
-/* Attribute Selecto */
+/* Attribute Selector */
 
-a[target]{
+a[target] {
     color: orange;
 }
