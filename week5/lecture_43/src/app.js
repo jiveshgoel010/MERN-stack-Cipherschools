@@ -9,7 +9,7 @@ app.use(express.json());
 app.use("/user", userRouter);
 
 app.get("/", (req, res) => {
-  res.send("Jai Shree Ram <br> Jai shree Mahakal ");
+  res.send("hello world");
 });
 
 app.get("/add", (req, res) => {

@@ -8,7 +8,7 @@ const app = express();
 app.use(express.json());
 
 app.get("/", (req, res) => {
-  res.send("Jai Shree Ram <br> Jai shree Mahakal ");
+  res.send("hello world");
 });
 
 app.get("/add", (req, res) => {
@@ -54,5 +54,5 @@ app.delete("/delete-task/:taskId", async (req, res) => {
 });
 
 app.listen(3000, () => {
-  console.log("Jai Shree Ram server is started");
+  console.log("server is started");
 });

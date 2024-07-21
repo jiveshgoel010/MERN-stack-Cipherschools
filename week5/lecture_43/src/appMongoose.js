@@ -1,7 +1,6 @@
 const { connect } = require("mongoose");
 
-const MONGO_URL = "mongodb+srv://satendraprataps56:Windos123@cluster0.cig8esf.mongodb.net";
-
+const MONGO_URL = `mongodb://localhost:27017`;
 const DB_NAME = `cs-mern`;
 
 connect(`${MONGO_URL}/${DB_NAME}`);
