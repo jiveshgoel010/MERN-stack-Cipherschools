@@ -6,7 +6,7 @@ const TaskSchema = new Schema(
     description: { type: String, required: true },
     isComplete: { type: Boolean, default: false },
   },
-  { timestamps: true }
+  { timestamps: true } 
 );
 
 const TaskModel = model("Task", TaskSchema);

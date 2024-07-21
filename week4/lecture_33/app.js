@@ -4,7 +4,7 @@ const app = express();
 
 
 app.get('/', (req,res)=>{
-    res.send("Jai Shree Ram <br> Jai shree Mahakal ");
+    res.send("hello");
 })
 
 app.get("/add",(req,res)=>{
@@ -14,5 +14,5 @@ app.get("/add",(req,res)=>{
 })
 
 app.listen(3000,()=>{
-    console.log("Jai Shree Ram server is started");
+    console.log("server is started");
 })
